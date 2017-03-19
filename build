@@ -1,0 +1,28 @@
+reset
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "Build Script By: Dean Van Greunen <Deanvg9000@gmail.com>"
+echo "Program Author: Dean Van Greunen <Deanvg9000@gmail.com>"
+echo "Starting Compilation Process"
+echo "Current View - Clean Up Started"
+rm -r objs  
+rm -r bin
+echo "Clean Up Completed"
+mkdir objs
+mkdir bin
+cd objs/
+g++ -std=gnu++11 -c $(find ../src/ -wholename *.hpp -print)
+g++ -std=gnu++11 -c $(find ../src/ -wholename *.cpp -print)
+g++ -std=gnu++11 -c $(find ../src/ -wholename *.c -print)
+g++ -std=gnu++11 -c $(find ../src/ -wholename *.h -print)
+echo "Compilation Completed"
+echo "Linking Started"
+g++ $(find *.o) -o mystars -lsfml-graphics -lsfml-window -lsfml-system
+mv mystars ../bin
+cd ..
+echo "Linking Completed"
+
+cd bin/
+chmod 755 mystars
+cd ..
+echo "Compilation Proccess Completed"
+echo "run with ./start"
