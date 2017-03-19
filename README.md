@@ -1,7 +1,7 @@
 # Deans-Stars
 My Stars made with SFML and C++
 
-# Built With
+## Built With
 - Languages:
   - C++ (https://en.wikipedia.org/wiki/C%2B%2B)
 - Libs:
