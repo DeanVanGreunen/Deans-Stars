@@ -46,13 +46,17 @@ For **ubuntu linux** flavours simply run the following to set up your developmen
 **cd** to the project root directory
 
 To **Compile**, call:
-- ./build
-
+```
+   ./build
+```
 To **Run**, call:
-- ./start
-
+```
+   ./start
+```
 To **Build** then **Run**, call:
-- ./build && ./start
+```
+   ./build && ./start
+```
 
 Author: https://github.com/DeanVanGreunen (Dean Van Greunen) a.k.a **MRX**
 
