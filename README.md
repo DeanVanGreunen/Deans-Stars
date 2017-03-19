@@ -58,14 +58,9 @@ To **Build** then **Run**, call:
    ./build && ./start
 ```
 
-Preview of mystars running in full screen mode:
-  ![Preview in Action](/docs/preview.gif?raw=true "Preview in Action")
+**Preview** of mystars running in **Full Screen** mode:
 
-
-
-
-
-
+![Preview in Action](/docs/preview.gif?raw=true "Preview in Action")
 
 Author: https://github.com/DeanVanGreunen (Dean Van Greunen) a.k.a **MRX**
 
